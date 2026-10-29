@@ -394,21 +394,31 @@
     filter: brightness(0) !important;
   }
   .pre-order-button {
-    background-color: #212121 !important;
-    color: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #010f2b !important;
     border: none !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
-    transition: transform 0.2s ease, background-color 0.2s ease !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease !important;
+    cursor: pointer !important;
   }
   .pre-order-button:hover {
-    background-color: #333333 !important;
+    background-color: #f2f4f8 !important;
     transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  }
+  .pre-order-button:active {
+    background-color: #e5e8ee !important;
+    transform: translateY(0) !important;
   }
   .pre-order-button *,
   .pre-order-button span,
   .pre-order-button .text-button,
-  .pre-order-button .text--dark-blue {
-    color: #ffffff !important;
+  .pre-order-button .text--dark-blue,
+  .pre-order-button:hover *,
+  .pre-order-button:hover span,
+  .pre-order-button:hover .text-button,
+  .pre-order-button:hover .text--dark-blue {
+    color: #010f2b !important;
   }
 </style>
 <!-- This site was created in Taptop. https://taptop.pro/ -->
