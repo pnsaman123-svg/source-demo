@@ -344,7 +344,9 @@
     z-index: 1 !important;
   }
   @media (min-width: 992px) {
-    .footer__pompa {
+    .footer__pompa,
+    .image--u-if9h195re,
+    #if9h195re_0 {
       width: clamp(230px, 17vw, 320px) !important;
       height: clamp(320px, 24vw, 440px) !important;
       top: clamp(120px, 9.5vw, 180px) !important;
@@ -364,8 +366,10 @@
       width: 100% !important;
     }
   }
-  .image--u-if9h195re {
-    transform: none !important;
+  @media (max-width: 991px) {
+    .image--u-if9h195re {
+      transform: none !important;
+    }
   }
   .footer__description--wrapper {
     display: flex !important;
