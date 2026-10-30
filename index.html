@@ -300,30 +300,105 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
   }
 
-  /* Footer 3D Turnaround Model Showcase */
-  .footer__pompa {
-    width: 280px !important;
-    height: 380px !important;
+  /* Footer Layout & CTA Positioning - Clean spacing, push CTA below product */
+  .footer {
+    height: auto !important;
+    min-height: 100vh !important;
+    background-color: #FAFBFD !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+  .footer__container {
+    height: auto !important;
+    min-height: 100vh !important;
+    max-width: none !important;
+    overflow: visible !important;
+    position: relative !important;
+    background-color: #FAFBFD !important;
+  }
+  .footer__wrapper {
+    height: auto !important;
+    min-height: 100vh !important;
     display: flex !important;
-    justify-content: center !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
     align-items: center !important;
-    transform: none !important;
-    top: 22vh !important;
+    padding-top: 1.5vw !important;
+    padding-bottom: 24px !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+  .footer__bg {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    position: absolute !important;
+    background-position: center bottom !important;
+    background-size: cover !important;
     pointer-events: none !important;
+    z-index: 0 !important;
+  }
+  .footer__h2--wrapper {
+    margin-bottom: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  @media (min-width: 992px) {
+    .footer__pompa {
+      width: clamp(230px, 17vw, 320px) !important;
+      height: clamp(320px, 24vw, 440px) !important;
+      top: clamp(120px, 9.5vw, 180px) !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      position: absolute !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      pointer-events: none !important;
+      z-index: 2 !important;
+    }
+    .footer__bottom {
+      margin-top: clamp(320px, 22.5vw, 420px) !important;
+      position: relative !important;
+      z-index: 3 !important;
+      width: 100% !important;
+    }
   }
   .image--u-if9h195re {
     transform: none !important;
+  }
+  .footer__description--wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    row-gap: 20px !important;
+    margin-bottom: 36px !important;
+  }
+  .footer .pre-order-button {
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  /* Adaptive Footer 3D Model & CTA Spacing */
+  .footer-adaptive {
+    background-color: #FAFBFD !important;
   }
   .footer-adaptive__pompa {
     width: 200px !important;
     height: 270px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: -10px !important;
+    margin-bottom: 24px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     transform: none !important;
     pointer-events: none !important;
+  }
+  .footer-adaptive__description--wrapper {
+    row-gap: 18px !important;
+    margin-bottom: 28px !important;
   }
   .footer__turnaround-canvas {
     width: 100% !important;
